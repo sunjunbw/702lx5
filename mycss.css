@@ -1,0 +1,97 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+.six-img{
+    position: relative;
+}
+.six-img>img{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    cursor: progress;
+}
+.listbox {
+    position: absolute;
+    background: url(img/list.png) no-repeat;
+    height: 48px;
+    width: 48px;
+    right: 40px;
+    top: 20px;
+    margin-top: 15px;
+    z-index: 5;
+}
+.listbox:hover{
+    position: absolute;
+    background: url(img/list-hover.png) no-repeat;
+    height: 48px;
+    width: 48px;
+    right: 40px;
+    top: 20px;
+    margin-top: 15px;
+    z-index: 5;
+}
+.content{
+    position: absolute;
+    left: 120px;
+    bottom: 100px;;
+    z-index:6;
+
+}
+.content-1{
+    font-size: 52px;
+}
+.content-1:hover{
+    color: red;
+}
+.content-2{
+    font-size: 16px;
+    line-height: 50px;
+    color: #fd0202;
+    border: 2px solid #fd0202;
+    border-radius: 4px;
+    width: 204px;
+    text-align: center;
+    margin-top: 50px;
+}
+.content-2:hover{
+    background: red;
+    color: #fff;
+}
+
+.mouse{
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    bottom: 35px;
+    width: 30px;
+    margin-left: -15px;
+    height: 48px;
+    border-radius: 15px;
+    border: 2px solid #000;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.mouse__wheel{
+    position: absolute;
+    left: 50%;
+    bottom: 35px;
+    margin-left: -2px;
+    width: 4px;
+    height: 9px;
+    background: #000;
+    border-radius: 2px;
+    animation: mouse-wheel 1.25s infinite linear alternate;
+
+}
+@keyframes  mouse-wheel {
+    0%{
+        bottom: 35px;
+
+    }
+    100%{
+        bottom: 50px;
+    }
+
+
+}
